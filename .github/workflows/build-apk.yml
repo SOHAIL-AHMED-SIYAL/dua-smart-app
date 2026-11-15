@@ -25,6 +25,16 @@ jobs:
         with:
           gradle-version: 8.2.1
 
+      - name: Cache Gradle wrapper and dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}-${{ hashFiles('**/*.gradle.kts') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
         with:
@@ -34,17 +44,20 @@ jobs:
           build-tools: 34.0.0
 
       - name: Ensure Gradle wrapper is present
-        run: gradle wrapper --gradle-version 8.2.1
+        run: |
+          if [ ! -f gradlew ] || [ ! -f gradle/wrapper/gradle-wrapper.jar ]; then
+            gradle wrapper --gradle-version 8.2.1
+          fi
 
       - name: Make gradlew executable
         run: chmod +x gradlew
 
       - name: Assemble Debug APK
-        run: ./gradlew assembleDebug --no-daemon
+        run: ./gradlew assembleDebug --stacktrace --no-daemon
 
       - name: Upload debug APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: app-debug-apk
+          name: DUA-SMART-APP-debug
           path: app/build/outputs/apk/debug/app-debug.apk
           retention-days: 30

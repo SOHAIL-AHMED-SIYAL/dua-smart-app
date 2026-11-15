@@ -9,3 +9,8 @@ local.properties
 *.lock
 .DS_Store
 *.log
+
+# Gradle wrapper must NOT be ignored — required for CI to build directly
+!gradlew
+!gradlew.bat
+!gradle/wrapper/gradle-wrapper.jar
