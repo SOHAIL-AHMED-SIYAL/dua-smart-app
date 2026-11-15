@@ -1,0 +1,11 @@
+*.iml
+.gradle
+/build
+/captures
+*.keystore
+*.jks
+local.properties
+.idea/
+*.lock
+.DS_Store
+*.log

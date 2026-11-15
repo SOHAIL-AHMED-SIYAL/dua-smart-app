@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Slate monogram background -->
+    <group>
+        <path
+            android:fillColor="#64748B"
+            android:pathData="M54,8 C28.4,8 8,28.4 8,54 C8,79.6 28.4,100 54,100 C79.6,100 100,79.6 100,54 C100,28.4 79.6,8 54,8 Z" />
+        <!-- Abstract DSA monogram (thin-light strokes) -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1.5"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="
+                M31,31 L31,77 Q31,85 37,92 Q43,98 52,92 Q61,98 67,92 Q73,85 73,77 L73,31 Q73,23 67,17 Q61,11 52,17 Q43,11 37,17 Q31,23 31,31 Z
+                M46,31 Q56,31 60,39 Q64,47 60,55 Q56,63 60,71 Q64,79 56,79
+                M46,31 L64,31
+                M60,55 Q52,55 48,63 Q48,79 56,79 L44,79 Q36,73 36,61 Q36,49 44,43 L56,43 Q62,37 60,31 Z
+                M80,28 L94,78 L66,78 Z
+                M72,52 L96,52 M78,78 L90,42 L102,78 Z
+            " />
+    </group>
+</vector>

@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.DuaSmartApp" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_mesh</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.DuaSmartApp.Splash" parent="Theme.DuaSmartApp">
+        <item name="android:windowBackground">@drawable/bg_mesh</item>
+    </style>
+</resources>

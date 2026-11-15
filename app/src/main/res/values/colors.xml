@@ -1,0 +1,37 @@
+<resources>
+    <!-- Brand / ink -->
+    <color name="ink">#0F172A</color>
+    <color name="slate_700">#334155</color>
+    <color name="slate_500">#64748B</color>
+    <color name="slate_300">#CBD5E1</color>
+    <color name="slate_100">#F1F5F9</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Background mesh gradient stops -->
+    <color name="bg_stop_1">#CBD5E1</color>
+    <color name="bg_stop_2">#E2E8F0</color>
+    <color name="bg_stop_3">#94A3B8</color>
+
+    <!-- Glass surfaces -->
+    <color name="glass_fill_light">0xC7FFFFFF</color>     <!-- rgba(255,255,255,0.78) -->
+    <color name="glass_fill_soft">0xA6FFFFFF</color>    <!-- rgba(255,255,255,0.65) -->
+    <color name="glass_border">0xD9FFFFFF</color>       <!-- rgba(255,255,255,0.85) -->
+    <color name="glass_shadow">0x141E293B</color>       <!-- rgba(30,41,59,0.08) -->
+
+    <!-- Status pills -->
+    <color name="emerald_text">#047857</color>
+    <color name="emerald_fill">0x2E10B981</color>       <!-- rgba(16,185,129,0.18) -->
+    <color name="emerald_border">0x8010B981</color>
+
+    <color name="crimson_text">#B91C1C</color>
+    <color name="crimson_fill">0x2EEF4444</color>       <!-- rgba(239,68,68,0.18) -->
+    <color name="crimson_border">0x80EF4444</color>
+
+    <color name="amber_text">#B45309</color>
+    <color name="amber_fill">0x2EF59E0B</color>         <!-- rgba(245,158,11,0.18) -->
+    <color name="amber_border">0x80F59E0B</color>
+
+    <!-- UI accents -->
+    <color name="surface_tint">#0F172A</color>
+    <color name="on_surface">#FFFFFF</color>
+</resources>
